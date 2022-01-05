@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Zwroty</title>
+        <link rel="stylesheet" href="style.css">
+        <link class="nm_sheet" rel="stylesheet" href="https://mtech.pl/themes/modez/assets/cache/theme-50c42d393.css" type="text/css" media="all" onload="this.media='all'" as="style">
+
+    </head>
+    <body>
+        <header>
+            <h2>Zwrot urządzeń elektronicznych</h2>
+        </header>
+
+        <main>
+            <div id="select-option" onchange="selectOption()">
+                <input type="radio" name="select-method" id="rb-1">
+                <label for="rb-1">
+                    ZWROT
+                </label> <br>
+
+                <input type="radio" name="select-method" id="rb-2">
+                <label for="rb-2">
+                    REKLAMACJA
+                </label> <br>
+            </div>
+
+            <br>
+            <form action="#">
+                <div id="client-information">
+                    <h4>Dane zgłaszającego:</h4>
+                    <section>
+                        <div>
+                            Imię
+                        </div>
+                        <div>
+                            <input type="text">
+                            
+                        </div>
+                    </section>
+
+                    <section>
+                        <div>
+                            Nazwisko
+                        </div>
+                        <div>
+                            <input type="text">
+                            
+                        </div>
+                    </section>
+
+                    <section>
+                        <div>
+                            Adres
+                        </div>
+                        <div>
+                            <input type="text">
+                            
+                        </div>
+                    </section>
+
+                    <section>
+                        <div>
+                            Kod pocztowy
+                        </div>
+                        <div>
+                            <input type="text">
+                            
+                        </div>
+                    </section>
+
+                    <section>
+                        <div>
+                            Miejscowość
+                        </div>
+                        <div>
+                            <input type="text">
+                            
+                        </div>
+                    </section>
+
+                    <section>
+                        <div>
+                            Numer telefonu
+                        </div>
+                        <div>
+                            <input type="tel" maxlength="9">
+                            
+                        </div>
+                    </section>
+
+                    <section>
+                        <div>
+                            Adres e-mail
+                        </div>
+                        <div>
+                            <input type="email">
+                            
+                        </div>
+                    </section>
+
+                    <section id="number-bank">
+                        <div>
+                            Numer konta bankowego
+                        </div>
+                        <div>
+                            <input type="text" maxlength="26">
+                            
+                        </div>
+                    </section>
+                </div>
+
+                <div id="product-information">
+                    <h4>Informacje o produkcie:</h4>
+                    <section>
+                        <div>
+                            Numer dokumentu zakupu
+                        </div>
+                        <div>
+                            <input type="text">
+                            
+                        </div>
+                    </section>
+
+                    <section>
+                        <div>
+                            Produkt
+                        </div>
+                        <div>
+                            <select name="product-list">
+                                <option value="NONE">Brak</option>
+                                <option value="ID-1">Telefon</option>
+                                <option value="ID-2">Laptop</option>
+                                <option value="ID-3">Tablet</option>
+                                <option value="ID-4">Monitor</option>
+                                <option value="ID-5">Komputer</option>
+                            </select>
+                            
+                        </div>
+                    </section>
+
+                    <section id="desc-break">
+                        <div>
+                            Opis usterki
+                        </div>
+                        <div>
+                            <input type="text">
+                            
+                        </div>
+                    </section>
+
+                    <section id="reason-return">
+                        <div>
+                            Powód zwrotu
+                        </div>
+                        <div>
+                            <input type="text">
+                            
+                        </div>
+                    </section>
+
+                    <section>
+                        <div>
+                            Oczekiwany sposób zakończenia zgłoszenia
+                        </div>
+                        <div>
+                            <input type="text">
+                            
+                        </div>
+                    </section>
+                </div>
+
+                <div id="product-information">
+                    <h4>Informacje o produkcie:</h4>
+                    <section>
+                        <div>
+                            Sposób wysyłki zwracanych produktów
+                        </div>
+                        <div>
+                            <select name="product-list">
+                                <option value="NONE">Brak</option>
+                                <option value="ID-1">Poczta Polska</option>
+                                <option value="ID-2">DPD</option>
+                                <option value="ID-3">DHL</option>
+                                <option value="ID-4">InPost</option>
+                            </select>
+                            
+                        </div>
+                    </section>
+
+                    <section>
+                        <div>
+                            Uwagi do zgłoszenia
+                        </div>
+                        <div>
+                            <input type="text">
+                            
+                        </div>
+                    </section>
+                </div>
+                <br>
+                <input type="submit" value="Wyślij zgłoszenie">
+            </form>
+        </main>
+        
+        <script src="script.js"></script>
+    </body>
+</html>
