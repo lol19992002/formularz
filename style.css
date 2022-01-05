@@ -1,0 +1,34 @@
+section{
+    display: flex;
+    margin: 5px 0px;
+}
+
+section div{
+    width: 300px;
+    margin-left: 15px;
+}
+
+section input, select {
+    width: 300px;
+    text-align: center;
+}
+
+select {
+    width: 300px;
+}
+
+#reason-return, form{
+    display: none;
+}
+
+input[type=submit]{
+    height: 40px;
+}
+
+#client-information, #product-information, #product-information{
+    margin: 20px 0px;
+}
+
+input[type=radio]{
+    height: 10px;
+}
